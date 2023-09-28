@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>dropdown menu using select tab</title>
+    </head>
+    <script>
+        function favtutorial(){
+            var mylist=document.getElementById("mylist");
+            document.getElementById("favourite").value=mylist.options[mylist.selectedIndex].text;
+        }
+        </script>
+        <body>
+            <form>
+                <b>select your favourite tutorial</b>
+                <select id="mylist" onchange="favtutorial()">
+                <option>w3schools</option>
+                <option>javatpoint</option>
+                <option>greeks for greeks</option>
+                </select>
+                <p>your selected tutorial is:
+                    <input type="text" id="favourite" size="20"></p>
+            </form>
+            let sorted names=names.sort;
+        </body>    
+</html>
