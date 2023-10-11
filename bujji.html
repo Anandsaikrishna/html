@@ -1,0 +1,31 @@
+<DOC TYPE! html>
+<html>
+<script>
+     function add(){
+        x=document.getElementById("n1").value;
+        y=document.getElementById("n2").value;
+        result=parseInt(x)+parseInt(y);
+        document.getElementById("res").innerHTML=result;
+      }
+      function diff(){
+        x=document.getElementById("n1").value;
+        y=document.getElementById("n2").value;
+        result=parseInt(x)-parseInt(y);
+        document.getElementById("res").innerHTML=result;
+      }
+     function pro(){
+        x=document.getElementById("n1").value;
+        y=document.getElementById("n2").value;
+        result=parseInt(x)*parseInt(y);
+        document.getElementById("res").innerHTML=result;
+      }
+</script>
+<body>
+     <input id="n1" type="number" placeholder="enter first number"/></br>
+     <input id="n2" type="number" placeholder="enter first number"/></br>
+     <span id="res"></span></br>
+     <button onclick="add()">Add</button>
+     <button onclick="diff()">diff</button>
+     <button onclick="pro()">product</button>
+</body>
+</html>
